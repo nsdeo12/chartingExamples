@@ -10,11 +10,9 @@ app
         customerid:"test123"
       }
     });
-      $scope.tabs.push({ title: 'Beneficiary Details',test:'partial.html'});
+      $scope.tabs.push({ title: 'Beneficiary Details',test:'beneficiary.html'});
 
-      $scope.tabs.push({ title: 'Shipment Details',content:{
-        portDetails:"Chennai"
-      }});
+      $scope.tabs.push({ title: 'Shipment Details',test:'shipment.html'});
 
       $scope.tabs.push({ title: 'Insurance Details'});
       $scope.tabs.push({ title: 'Document Upload'});

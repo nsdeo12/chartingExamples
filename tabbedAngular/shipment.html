@@ -1,0 +1,66 @@
+<h1>Shipment  Information:</h1>
+    <form class="form-horizontal" ng-submit="submitStudnetForm()" role="form">
+        <div class="form-group">
+            <label for="firstName" class="col-sm-3 control-label">Port Name</label>
+            <div class="col-sm-6">
+                <input type="text" id="firstName" class="form-control" ng-model="student.firstName" />
+            </div>
+            <div class="col-sm-3"></div>
+
+        </div>
+        <div class="form-group">
+            <label for="lastName" class="col-sm-3 control-label">Port Location</label>
+            <div class="col-sm-6">
+                <input type="text" id="lastName" class="form-control" ng-model="student.lastName" />
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="dob" class="col-sm-3 control-label">arrival date</label>
+            <div class="col-sm-2">
+                <input type="date" id="arrival date" class="form-control" ng-model="student.DoB" />
+            </div>
+            <div class="col-sm-7"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="gender" class="col-sm-3 control-label">Inco Term</label>
+            <div class="col-sm-2">
+                <select id="gender" class="form-control" ng-model="student.gender">
+                    <option value="male">SIGHT</option>
+                    <option value="female">USANCE</option>
+                </select>
+            </div>
+            <div class="col-sm-7"></div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <span><b>Shipment Location</b></span>
+                <div class="radio">
+                    <label><input value="online" type="radio" name="training" ng-model="student.trainingType" />Online</label>
+                </div>
+                <div class="radio">
+                    <label><input value="onsite" type="radio" name="training" ng-model="student.trainingType" />OnSite</label>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <span><b>Main Subjects</b></span>
+                <div class="checkbox">
+                    <label><input type="checkbox" ng-model="student.maths" />GOODS</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" ng-model="student.physics" />SERVICES</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox"  ng-model="student.chemistry" />BOTH</label>
+                </div>
+            </div>
+        </div>
+
+        <input type="submit" value="Save" class="btn btn-primary col-sm-offset-3" />
+        <input type="reset" value="Reset" ng-click="resetForm()" class="btn" /> <br/>
+		@* Note: This form will not be submitted in demo. *@
+    </form>
